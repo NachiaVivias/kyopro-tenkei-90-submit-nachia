@@ -4,7 +4,7 @@
 ## コンパイルコマンド
 
 ```
-g++ generator.cpp -o contestant.exe -m64 -std=gnu++17 -O2 -static
+g++ generator.cpp -o generator.exe -m64 -std=gnu++17 -O2 -static
 ```
 
 ヘッダファイル `../Lib/generator_lib.hpp` が必要です。
