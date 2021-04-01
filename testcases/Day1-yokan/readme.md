@@ -30,4 +30,4 @@ g++ generator.cpp -o contestant.exe -m64 -std=gnu++17 -O2 -static
 - `03_random_bias1` : ランダムケースで、 A が小さい値に寄ります。
 - `03_random_bias2` `03_random_bias3` `03_random_bias4` : ランダムケースで、A の値がそれぞれ 小、大、中に偏ります。
 - `04_random#` (#=1,2,3,4) : ランダムケースです。
-- `05_random_max#` (#=1,2,3) : N,K が最大のケースです。
+- `05_random_max#` (#=1,2,3) : ランダムケースで、 N,L が最大のケースです。
