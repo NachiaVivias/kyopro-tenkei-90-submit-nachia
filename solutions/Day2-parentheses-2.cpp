@@ -48,8 +48,9 @@ int main() {
       }
     }
     else{
-      Q.push({p.searchBit-1,nextDepth,'('});
+      // 後に入れたほうが先に探索される
       Q.push({p.searchBit-1,nextDepth,')'});
+      Q.push({p.searchBit-1,nextDepth,'('});
     }
   }
 
