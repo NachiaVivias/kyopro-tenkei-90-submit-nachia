@@ -191,52 +191,52 @@ int main() {
   inputManeger -> rename("01_sample4")
                -> generate_sample4()
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all1")
+  inputManeger -> rename("02_all1")
                -> generate_fixed(1)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all2")
+  inputManeger -> rename("02_all2")
                -> generate_fixed(5)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all3")
+  inputManeger -> rename("02_all3")
                -> generate_fixed(6)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all4")
+  inputManeger -> rename("02_all4")
                -> generate_fixed(7)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all5")
+  inputManeger -> rename("02_all5")
                -> generate_fixed(8)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all6")
+  inputManeger -> rename("02_all6")
                -> generate_fixed(9)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all7")
+  inputManeger -> rename("02_all7")
                -> generate_fixed(11)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all8")
+  inputManeger -> rename("02_all8")
                -> generate_fixed(12)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all9")
+  inputManeger -> rename("02_all9")
                -> generate_fixed(13)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all10")
+  inputManeger -> rename("02_all10")
                -> generate_fixed(14)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all11")
+  inputManeger -> rename("02_all11")
                -> generate_fixed(15)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all12")
+  inputManeger -> rename("02_all12")
                -> generate_fixed(16)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all13")
+  inputManeger -> rename("02_all13")
                -> generate_fixed(17)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all14")
+  inputManeger -> rename("02_all14")
                -> generate_fixed(18)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all15")
+  inputManeger -> rename("02_all15")
                -> generate_fixed(19)
                -> validate() -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("01_all16")
+  inputManeger -> rename("02_all16")
                -> generate_fixed(20)
                -> validate() -> output_to_file() -> solve() -> clear();
   cerr << "finished" << endl << flush;
