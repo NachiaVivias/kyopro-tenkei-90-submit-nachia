@@ -30,7 +30,7 @@ int main() {
 
   // bit 全探索 -> 深さ優先探索
   stack<SearchNode> Q;
-  string buf;
+  string buf(N,'(');
   Q.push({N-1,0,'('});
   Q.push({N-1,0,')'});
   while(Q.size()){
