@@ -7,9 +7,6 @@
 #include<fstream>
 #include<algorithm>
 #include<memory>
-#include<thread>
-#include<future>
-#include<chrono>
 
 /////////////////////////////////////
 // Reference
