@@ -68,7 +68,7 @@ int main() {
   for(int i=0; i<K; i++) scanf("%d",&C[i]);
 
   // 遷移を MergeNode に表す
-  for(int c : C) G.G[c] = 1;
+  for(int c : C) G.G[c%B] += 1;
   G.multi = 10 % B;
 
   // N 桁分やったことにする

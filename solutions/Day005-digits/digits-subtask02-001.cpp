@@ -73,7 +73,7 @@ int main() {
   // 遷移を行列に書く
   for(int pre=0; pre<B; pre++) for(int c : C){
     int to = (pre*10+c)%B;
-    G[pre][to] = 1;
+    G[pre][to] += 1;
   }
 
   // N 桁分やったことにする
