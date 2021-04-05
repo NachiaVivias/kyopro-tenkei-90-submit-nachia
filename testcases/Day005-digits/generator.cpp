@@ -435,25 +435,25 @@ int main() {
                -> generate_random(10000,10000, 29,29, 8,8, 0x7102AB2C2720E9FB)
                -> validate({1,2,3}) -> output_to_file() -> solve() -> clear();
                
-  inputManeger -> rename("04_random_subtask1_01")
+  inputManeger -> rename("04_random_subtask2_01")
                -> generate_random(1,1'000'000'000'000'000'000, 2,29, 1,9, 0x40C7ADD7F81650FA)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_02")
+  inputManeger -> rename("04_random_subtask2_02")
                -> generate_random(1,1'000'000'000'000'000'000, 2,29, 1,9, 0xB5289F03B1B8ED4B)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_03")
+  inputManeger -> rename("04_random_subtask2_03")
                -> generate_random(1,1'000'000'000'000'000'000, 2,29, 1,9, 0x2007F7803C3D3E63)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_04")
+  inputManeger -> rename("04_random_subtask2_04")
                -> generate_random(900'000'000'000'000'000,999'999'999'999'999'999, 25,29, 1,1, 0x92E22700A4735869)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_05")
+  inputManeger -> rename("04_random_subtask2_05")
                -> generate_random(900'000'000'000'000'000,999'999'999'999'999'999, 25,29, 6,8, 0x4FF2C320FFCDD451)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_06")
+  inputManeger -> rename("04_random_subtask2_06")
                -> generate_random(1'000'000'000'000'000'000,1'000'000'000'000'000'000, 29,29, 9,9, 0x17C9BEF32620063A)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
-  inputManeger -> rename("04_random_subtask1_07")
+  inputManeger -> rename("04_random_subtask2_07")
                -> generate_random(1'000'000'000'000'000'000,1'000'000'000'000'000'000, 29,29, 8,8, 0x83CD28B4CD81B61C)
                -> validate({2,3}) -> output_to_file() -> solve() -> clear();
                
