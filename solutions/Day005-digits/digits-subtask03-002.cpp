@@ -73,7 +73,7 @@ vector<ull> convolution(const vector<ull>& A,const vector<ull>& B){
   for(int i=0; i<Z; i++){
     gerner_coeff.assign(4,1);
     gerner_const.assign(4,0);
-    for(int j=0; j<4; j++){
+    for(int j=0; j<3; j++){
       ull inv_coeff = powm(gerner_coeff[j],NTT_Mods[j]-2,NTT_Mods[j]);
       ull t = resM[j][i] + (NTT_Mods[j]-gerner_const[j]);
       t = t * inv_coeff % NTT_Mods[j];
