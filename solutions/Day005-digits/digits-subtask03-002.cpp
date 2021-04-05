@@ -8,7 +8,7 @@ using ull = unsigned long long;
 /////////////////////////////////////
 // Problem : https://github.com/E869120/kyopro_educational_90/blob/main/problem/005.jpg
 // Subtask 3
-// Time Complexity : O( B log B log N ) but large constant factor
+// Time Complexity : O( B log B log N ) with large constant factor
 
 /////////////////////////////////////
 // input
