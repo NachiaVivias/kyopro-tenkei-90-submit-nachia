@@ -7,7 +7,7 @@ rm out/*
 
 CASECOUNT=$(./generator.exe --casecount)
 
-for((i=1; i<$CASECOUNT; i++)) do
+for((i=1; i<=$CASECOUNT; i++)) do
   echo $i | ./generator.exe -input file gen-in.txt -output file gen-out.txt -log file gen-log.txt -casename file gen-name.txt
   CASENAME=$(cat gen-name.txt)
   mv gen-in.txt "in/"$CASENAME
