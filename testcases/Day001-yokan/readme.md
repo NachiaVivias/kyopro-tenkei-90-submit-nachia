@@ -29,7 +29,7 @@ g++ generator.cpp -o generator.exe -std=gnu++17 -O2 -static
 - `void` : 出力されません。
 - `file <filename>` : 出力先はファイルで、ファイル名 `filename` で指定できます。
 
-テストケースの番号 (0-indexed) を表す整数 `idx` を標準入力に入力してください。
+テストケースの番号 (1-indexed) を表す整数 `idx` を標準入力に入力してください。
 この入力は `--casecount` 指定時には不要です。
 
 保存される内容の環境依存は想定していません。あればジェネレータの不備です。
