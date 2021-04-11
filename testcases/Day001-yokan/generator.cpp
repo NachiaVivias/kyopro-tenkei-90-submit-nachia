@@ -515,15 +515,15 @@ vector<void (*)(Input*)> Input::mGenerateById = {
 //    Outputs the number of testcase to stdout instead of generating any testcase.
 // - `-input <stdout|stderr|file|void> <filename>`
 //    Destination of the testcase's input file.
-// - `-output <stdout|stderr|file|void> <filename>]`
+// - `-output <stdout|stderr|file|void> <filename>`
 //    Destination of the testcase's output file.
-// - `-casename <stdout|stderr|file|void> <filename>]`
+// - `-casename <stdout|stderr|file|void> <filename>`
 //    Destination of the testcase's name.
-// - `-input <stdout|stderr|file|void> <filename>]`
+// - `-input <stdout|stderr|file|void> <filename>`
 //    Destination of the log.
 //
 // ## stdin
-//    Input an integer `idx` representing the id (0-indexed) of the testcase.
+//    Input an integer `idx` representing the id (1-indexed) of the testcase.
 //    This is not necessary when calling with `--casecount` option.
 //
 // ## error
