@@ -1,6 +1,4 @@
 
-#include<direct.h>
-#include<dirent.h>
 #include<string>
 #include<vector>
 #include<iostream>
