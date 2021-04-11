@@ -1,5 +1,5 @@
 
-g++ generator.cpp -o generator.exe -m64 -std=gnu++17 -O2 -static
+g++ generator.cpp -o generator.exe -std=gnu++17 -O2 -static
 mkdir in
 mkdir out
 rm in/*
@@ -19,8 +19,8 @@ rm generator.exe
 rm gen-log.txt
 rm gen-name.txt
 
-g++ main.cpp -o contestant.exe -m64 -std=gnu++17 -O2 -static
-g++ judge.cpp -o judge.exe -m64 -std=gnu++17 -O2 -static
+g++ main.cpp -o contestant.exe -std=gnu++17 -O2 -static
+g++ judge.cpp -o judge.exe -std=gnu++17 -O2 -static
 
 echo -n 1> result.txt
 cd in
