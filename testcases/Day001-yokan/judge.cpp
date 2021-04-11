@@ -47,35 +47,32 @@ int main(int argc, char** argv){
     exit(0);
   }
 
-  FILE* fileTest = nullptr;
-  fopen_s(&fileTest,argv[1],"r");
-  if(fileTest==nullptr){
+  std::ifstream fileTest;
+  fileTest.open(argv[1]);
+  if(!fileTest.is_open()){
     std::cerr << "error : " << argv[1] << " (for [testcase input]) does not exist" << std::endl << std::flush;
     exit(1);
   }
   else{
-    fclose(fileTest);
-    fileTest = nullptr;
+    fileTest.close();
   }
   
-  fopen_s(&fileTest,argv[2],"r");
-  if(fileTest==nullptr){
+  fileTest.open(argv[2]);
+  if(!fileTest.is_open()){
     std::cerr << "error : " << argv[2] << " (for [testcase output]) does not exist" << std::endl << std::flush;
     exit(1);
   }
   else{
-    fclose(fileTest);
-    fileTest = nullptr;
+    fileTest.close();
   }
-
-  fopen_s(&fileTest,argv[3],"r");
-  if(fileTest==nullptr){
+  
+  fileTest.open(argv[3]);
+  if(!fileTest.is_open()){
     std::cerr << "error : " << argv[3] << " (for [contestant output]) does not exist" << std::endl << std::flush;
     exit(1);
   }
   else{
-    fclose(fileTest);
-    fileTest = nullptr;
+    fileTest.close();
   }
 
   std::ifstream case_in(argv[1]);
