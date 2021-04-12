@@ -85,8 +85,8 @@ namespace generatorNS{
       while(perm[p]!=i){
         assert(0 <= perm[p] && perm[p] < N);
         assert(perm[p] != perm[perm[p]]);
-        swap(V[p],V[perm[p]]);
-        swap(p,perm[p]);
+        std::swap(V[p],V[perm[p]]);
+        /* std::swap(p,perm[p]); */ { int pbuf = p; p = perm[p]; perm[p] = pbuf; }
       }
     }
   }
