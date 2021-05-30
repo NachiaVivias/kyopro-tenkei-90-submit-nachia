@@ -32,7 +32,7 @@ int H, W;
 string C;
 
 vector<int> dp_nodes; // あり得る状態
-map<int,int> dp_nodeid; // dp配列インデックス から 状態のビット列 へ
+map<int,int> dp_nodeid; // 状態のビット列 から dp配列インデックス へ
 vector<int> dp_edges[2]; // 各状態からの遷移 ( 高々 2 通り )
 
 void init_dp(){
