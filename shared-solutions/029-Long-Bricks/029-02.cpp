@@ -1,6 +1,8 @@
-#include<vector>
-#include<iostream>
-#include<algorithm>
+#include <vector>
+#include <iostream>
+#pragma GCC target("avx")
+#pragma GCC optimize("O3")
+#pragma GCC optimize("unroll-loops")
 using namespace std;
 
 /////////////////////////////////////
@@ -18,18 +20,20 @@ using namespace std;
 // L[N] R[N]
 //
 
+int W,N;
+int H[500000];
 
-int main(){
-  int W,N; scanf("%d%d",&W,&N);
-
-  vector<int> H(W,0);
+int main() {
+  cin.tie(0);
+  ios_base::sync_with_stdio(false);
+  cin >> W >> N;
   for(int i=0; i<N; i++){
-    int l,r; scanf("%d%d",&l,&r); l--;
+    int l,r; cin >> l >> r; l--;
     int h = 0;
     for(int j=l; j<r; j++) h = max(h,H[j]);
     h += 1;
     for(int j=l; j<r; j++) H[j] = h;
-    printf("%d\n",h);
+    cout << h << "\n";
   }
   return 0;
 }
