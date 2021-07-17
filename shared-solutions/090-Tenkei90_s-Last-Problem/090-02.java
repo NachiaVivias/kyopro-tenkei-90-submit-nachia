@@ -145,6 +145,7 @@ public class Main {
 		long w = powm(g,(MOD-1)/(1<<k),MOD);
 		long iw = powm(w,MOD-2,MOD);
 		long inv2 = powm(2,MOD-2,MOD);
+		long invk = powm(1<<k,MOD-2,MOD);
 
 		long[] P = new long[1<<k];
 		for(int i=0; i<n; i++) P[i] = A[i];
@@ -154,6 +155,10 @@ public class Main {
 
 		NTT(P,g);
 		NTT(Q,g);
+		for(int i=0; i<1<<k; i++) P[i] = P[i] * Q[i] % MOD * invk % MOD;
+		NTT(P,ig);
+		for(int i=n; i<(1<<k); i++) P[i] = 0;
+		NTT(P,g);
 
 		while(K >= n) {
 
