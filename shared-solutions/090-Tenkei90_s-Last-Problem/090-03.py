@@ -1,5 +1,4 @@
 
-
 # Problem : https://atcoder.jp/contests/typical90/tasks/typical90_cl
 # Time Complexity : O( K log K ( log K + log N ) )
 
@@ -100,6 +99,7 @@ def Bostan_Mori(A,C,K,g):
   w = pow(g,(MOD-1)//k,MOD)
   iw = pow(w,MOD-2,MOD)
   inv2 = pow(2,MOD-2,MOD)
+  invk = pow(k,MOD-2,MOD)
   
   P = [0] * k
   for i in range(n): P[i] = A[i]
@@ -109,6 +109,10 @@ def Bostan_Mori(A,C,K,g):
 
   ntt(P,g)
   ntt(Q,g)
+  for i in range(k): P[i] = P[i] * Q[i] % MOD * invk % MOD
+  ntt(P,ig)
+  for i in range(n,k): P[i] = 0
+  ntt(P,g)
 
   def UP(a):
     n = len(a)
