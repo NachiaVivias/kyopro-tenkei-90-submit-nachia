@@ -135,15 +135,20 @@ ull Kth_term_of_linearly_recurrent_sequence(
   ull w = powm(g,(MOD-1)/(1<<k),MOD);
   ull iw = powm(w,MOD-2,MOD);
   ull inv2 = powm(2,MOD-2,MOD);
+  ull invk = powm(1<<k,MOD-2,MOD);
 
   vector<ull> P(1<<k,0);
   for(int i=0; i<n; i++) P[i] = A[i];
   vector<ull> Q(1<<k,0);
   Q[0] = 1;
   for(int i=0; i<n; i++) Q[i+1] = (MOD - C[i]) % MOD;
-
+  
   NTT(P,g);
   NTT(Q,g);
+  for(int i=0; i<1<<k; i++) P[i] = P[i] * Q[i] % MOD * invk % MOD; // * invk % MOD;
+  NTT(P,ig);
+  for(int i=n; i<(1<<k); i++) P[i] = 0;
+  NTT(P,g);
 
   auto UP = [g,w](const vector<ull>& a) -> vector<ull> {
     int n = a.size();
